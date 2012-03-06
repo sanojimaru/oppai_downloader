@@ -7,7 +7,7 @@ import urllib
 
 APP_ID = '17C9833049FC22871BCA2D3CCE54885DDD07CDBC'
 API_URI = 'http://api.bing.net/json.aspx'
-OUT_DIR = './syokusyu'
+OUT_DIR = './data'
 
 if __name__ == '__main__':
     if not os.path.exists(OUT_DIR):
@@ -25,7 +25,7 @@ if __name__ == '__main__':
                 "Image.Count": 50,
                 "Image.Offset":page_count * 50,
                 "Adult": "off",
-                "Query": "触手"
+                "Query": "おっぱい"
                 }
 
         url = API_URI + "?" + urllib.urlencode(params)
