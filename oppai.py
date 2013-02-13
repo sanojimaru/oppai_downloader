@@ -29,7 +29,7 @@ if __name__ == '__main__':
                 }
 
         url = API_URI + "?" + urllib.urlencode(params)
-        data = json.loads(urllib.urlopen(url).read())
+        data = json.load(urllib.urlopen(url))
 
         for entry in data["SearchResponse"]["Image"]["Results"]:
             media_url = entry["MediaUrl"].encode('utf-8')
